@@ -713,7 +713,8 @@ class GFAPI {
 
       }
 
-      send_notifications($form_id, $result);
+      // This is a unique solution for MMM with the form ID of 1 being passed.
+      send_notifications(1, $result);
 
 			$entry_ids[] = $result;
 		}
